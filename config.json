@@ -1,6 +1,8 @@
 {
-    
+    "_comment": "Set the clientID as the userid of your bot and then put the token.",
+    "-commen2": "medhours is the number of hours you want to track between Tylenol and Motrin.",
     "clientId": "",
-    "token": ""
+    "token": "",
+    "medhours": ""
 
 }
