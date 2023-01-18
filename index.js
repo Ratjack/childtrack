@@ -72,7 +72,7 @@ client.on('interactionCreate', async interaction => {
       const receivedEmbed2 = interaction.message.embeds[0];
       receivedEmbed2.fields.find(f => f.name === "Medication taken").value = `>>> Tylenol`
       receivedEmbed2.fields.find(f => f.name === "Time taken").value = `>>> <t:${time}>`
-      receivedEmbed2.fields.find(f => f.name === "Next dose").value = `>>> Motrin <t:${time + 1000 * 60 * config.medhours}>`
+      receivedEmbed2.fields.find(f => f.name === "Next dose").value = `>>> Motrin <t:${time + 60 * 60 * config.medhours}>`
 
       const button = new MessageActionRow()
       .addComponents(
@@ -102,7 +102,7 @@ client.on('interactionCreate', async interaction => {
       const receivedEmbed2 = interaction.message.embeds[0];
       receivedEmbed2.fields.find(f => f.name === "Medication taken").value = `>>> Motrin`
       receivedEmbed2.fields.find(f => f.name === "Time taken").value = `>>> <t:${time}>`
-      receivedEmbed2.fields.find(f => f.name === "Next dose").value = `>>> Tylenol <t:${time + 1000 * 60 * config.medhours}>`
+      receivedEmbed2.fields.find(f => f.name === "Next dose").value = `>>> Tylenol <t:${time + 60 * 60 * config.medhours}>`
 
       const button = new MessageActionRow()
       .addComponents(
